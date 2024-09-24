@@ -1,0 +1,7 @@
+-- AlterTable
+ALTER TABLE "Layout" ALTER COLUMN "announcement_1" DROP NOT NULL,
+ALTER COLUMN "announcement_2" DROP NOT NULL,
+ALTER COLUMN "facebook" DROP NOT NULL,
+ALTER COLUMN "instagram" DROP NOT NULL,
+ALTER COLUMN "message_1" DROP NOT NULL,
+ALTER COLUMN "message_2" DROP NOT NULL;

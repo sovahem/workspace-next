@@ -1,0 +1,26 @@
+-- DropForeignKey
+ALTER TABLE "Order" DROP CONSTRAINT "Order_delivery_city_id_fkey";
+
+-- AlterTable
+ALTER TABLE "Order" ALTER COLUMN "lastname" DROP NOT NULL,
+ALTER COLUMN "lastname" SET DEFAULT '',
+ALTER COLUMN "firstname" DROP NOT NULL,
+ALTER COLUMN "firstname" SET DEFAULT '',
+ALTER COLUMN "email" DROP NOT NULL,
+ALTER COLUMN "email" SET DEFAULT '',
+ALTER COLUMN "address" DROP NOT NULL,
+ALTER COLUMN "address" SET DEFAULT '',
+ALTER COLUMN "postal_code" DROP NOT NULL,
+ALTER COLUMN "postal_code" SET DEFAULT '',
+ALTER COLUMN "city" DROP NOT NULL,
+ALTER COLUMN "city" SET DEFAULT '',
+ALTER COLUMN "country" DROP NOT NULL,
+ALTER COLUMN "country" SET DEFAULT '',
+ALTER COLUMN "phone" DROP NOT NULL,
+ALTER COLUMN "phone" SET DEFAULT '',
+ALTER COLUMN "status" DROP NOT NULL,
+ALTER COLUMN "status" SET DEFAULT '',
+ALTER COLUMN "delivery_city_id" DROP NOT NULL;
+
+-- AddForeignKey
+ALTER TABLE "Order" ADD CONSTRAINT "Order_delivery_city_id_fkey" FOREIGN KEY ("delivery_city_id") REFERENCES "DeliveryCity"("id") ON DELETE SET NULL ON UPDATE CASCADE;
