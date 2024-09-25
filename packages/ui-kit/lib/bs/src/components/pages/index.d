@@ -1,1 +1,1 @@
-src/components/pages/index.cmj : src/components/ui-tmp/Accordion/Accordion.cmj src/components/ui-tmp/Accordion/Accordion.cmi src/components/ui-tmp/AlertDialog/AlertDialog.cmj src/components/ui-tmp/AlertDialog/AlertDialog.cmi
+src/components/pages/index.cmj : src/components/ui-tmp/Accordion/Accordion.cmj src/components/ui-tmp/Accordion/Accordion.cmi src/components/ui-tmp/Alert/Alert.cmj src/components/ui-tmp/Alert/Alert.cmi src/components/ui-tmp/AlertDialog/AlertDialog.cmj src/components/ui-tmp/AlertDialog/AlertDialog.cmi

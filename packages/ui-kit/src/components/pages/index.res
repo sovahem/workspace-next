@@ -19,5 +19,10 @@
          cancel="Annuler"
          continue="Continuer"
        />
+       <Alert.Make
+         title="Titre de l'alerte"
+         description="Description de l'alerte"
+         variant="default"
+       />
      </div>
    }

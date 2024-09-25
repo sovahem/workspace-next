@@ -5,11 +5,11 @@ rule astj
   command = /Users/sovannarahem/Desktop/Projects/workspace-next/node_modules/.pnpm/rescript@11.1.4/node_modules/rescript/darwinarm64/bsc.exe  -bs-v 11.1.4 -bs-jsx 4 -bs-jsx-mode automatic -uncurried -open RescriptCore -absname -bs-ast -o $out $i
 o src/components/pages/index.ast : astj ../../src/components/pages/index.res
 rule deps
-  command = /Users/sovannarahem/Desktop/Projects/workspace-next/node_modules/.pnpm/rescript@11.1.4/node_modules/rescript/darwinarm64/bsb_helper.exe -hash b593d811e5907b2217ff85df8db7de36 $in
+  command = /Users/sovannarahem/Desktop/Projects/workspace-next/node_modules/.pnpm/rescript@11.1.4/node_modules/rescript/darwinarm64/bsb_helper.exe -hash 855b0886459b600206d20447968a6d3b $in
   restat = 1
 o src/components/pages/index.d : deps src/components/pages/index.ast
 rule mij
-  command = /Users/sovannarahem/Desktop/Projects/workspace-next/node_modules/.pnpm/rescript@11.1.4/node_modules/rescript/darwinarm64/bsc.exe -I src/app/fonts -I src/app -I src/components/ui -I src/components/ui-tmp/Accordion -I src/components/ui-tmp/AlertDialog -I src/components/ui-tmp -I src/components/pages -I src/components -I src/stories/assets -I src/stories -I src/hooks -I src/lib -I src -I /Users/sovannarahem/Desktop/Projects/workspace-next/packages/ui-kit/node_modules/@rescript/core/lib/ocaml -I /Users/sovannarahem/Desktop/Projects/workspace-next/packages/ui-kit/node_modules/@rescript/react/lib/ocaml -open RescriptCore  -uncurried -bs-package-name my-rescript-project -bs-package-output esmodule:$in_d:.bs.js -bs-v $g_finger $i
+  command = /Users/sovannarahem/Desktop/Projects/workspace-next/node_modules/.pnpm/rescript@11.1.4/node_modules/rescript/darwinarm64/bsc.exe -I src/app/fonts -I src/app -I src/components/ui -I src/components/ui-tmp/Alert -I src/components/ui-tmp/Accordion -I src/components/ui-tmp/AlertDialog -I src/components/ui-tmp -I src/components/pages -I src/components -I src/stories/assets -I src/stories -I src/hooks -I src/lib -I src -I /Users/sovannarahem/Desktop/Projects/workspace-next/packages/ui-kit/node_modules/@rescript/core/lib/ocaml -I /Users/sovannarahem/Desktop/Projects/workspace-next/packages/ui-kit/node_modules/@rescript/react/lib/ocaml -open RescriptCore  -uncurried -bs-package-name my-rescript-project -bs-package-output esmodule:$in_d:.bs.js -bs-v $g_finger $i
   dyndep = 1
   restat = 1
 o src/components/pages/index.cmj src/components/pages/index.cmi ../../src/components/pages/index.bs.js : mij src/components/pages/index.ast
@@ -19,3 +19,6 @@ o src/components/ui-tmp/AlertDialog/AlertDialog.cmj src/components/ui-tmp/AlertD
 o src/components/ui-tmp/Accordion/Accordion.ast : astj ../../src/components/ui-tmp/Accordion/Accordion.res
 o src/components/ui-tmp/Accordion/Accordion.d : deps src/components/ui-tmp/Accordion/Accordion.ast
 o src/components/ui-tmp/Accordion/Accordion.cmj src/components/ui-tmp/Accordion/Accordion.cmi ../../src/components/ui-tmp/Accordion/Accordion.bs.js : mij src/components/ui-tmp/Accordion/Accordion.ast
+o src/components/ui-tmp/Alert/Alert.ast : astj ../../src/components/ui-tmp/Alert/Alert.res
+o src/components/ui-tmp/Alert/Alert.d : deps src/components/ui-tmp/Alert/Alert.ast
+o src/components/ui-tmp/Alert/Alert.cmj src/components/ui-tmp/Alert/Alert.cmi ../../src/components/ui-tmp/Alert/Alert.bs.js : mij src/components/ui-tmp/Alert/Alert.ast
