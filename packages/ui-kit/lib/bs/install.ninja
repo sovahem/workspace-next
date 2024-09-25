@@ -15,6 +15,10 @@ o AlertDialog.cmi : cp ../bs/src/components/ui-tmp/AlertDialog/AlertDialog.cmi
 o AlertDialog.cmj : cp ../bs/src/components/ui-tmp/AlertDialog/AlertDialog.cmj
 o AlertDialog.cmt : cp ../bs/src/components/ui-tmp/AlertDialog/AlertDialog.cmt
 o AlertDialog.res : cp ../../src/components/ui-tmp/AlertDialog/AlertDialog.res
+o Breadcrumb.cmi : cp ../bs/src/components/ui-tmp/Breadcrumb/Breadcrumb.cmi
+o Breadcrumb.cmj : cp ../bs/src/components/ui-tmp/Breadcrumb/Breadcrumb.cmj
+o Breadcrumb.cmt : cp ../bs/src/components/ui-tmp/Breadcrumb/Breadcrumb.cmt
+o Breadcrumb.res : cp ../../src/components/ui-tmp/Breadcrumb/Breadcrumb.res
 o AspectRadio.cmi : cp ../bs/src/components/ui-tmp/AspectRadio/AspectRadio.cmi
 o AspectRadio.cmj : cp ../bs/src/components/ui-tmp/AspectRadio/AspectRadio.cmj
 o AspectRadio.cmt : cp ../bs/src/components/ui-tmp/AspectRadio/AspectRadio.cmt
@@ -23,6 +27,10 @@ o Avatar.cmi : cp ../bs/src/components/ui-tmp/Avatar/Avatar.cmi
 o Avatar.cmj : cp ../bs/src/components/ui-tmp/Avatar/Avatar.cmj
 o Avatar.cmt : cp ../bs/src/components/ui-tmp/Avatar/Avatar.cmt
 o Avatar.res : cp ../../src/components/ui-tmp/Avatar/Avatar.res
+o Button.cmi : cp ../bs/src/components/ui-tmp/Button/Button.cmi
+o Button.cmj : cp ../bs/src/components/ui-tmp/Button/Button.cmj
+o Button.cmt : cp ../bs/src/components/ui-tmp/Button/Button.cmt
+o Button.res : cp ../../src/components/ui-tmp/Button/Button.res
 o Accordion.cmi : cp ../bs/src/components/ui-tmp/Accordion/Accordion.cmi
 o Accordion.cmj : cp ../bs/src/components/ui-tmp/Accordion/Accordion.cmj
 o Accordion.cmt : cp ../bs/src/components/ui-tmp/Accordion/Accordion.cmt
@@ -31,4 +39,4 @@ o Alert.cmi : cp ../bs/src/components/ui-tmp/Alert/Alert.cmi
 o Alert.cmj : cp ../bs/src/components/ui-tmp/Alert/Alert.cmj
 o Alert.cmt : cp ../bs/src/components/ui-tmp/Alert/Alert.cmt
 o Alert.res : cp ../../src/components/ui-tmp/Alert/Alert.res
-build install.stamp : touch index.cmi index.cmj Badge.cmi Badge.cmj AlertDialog.cmi AlertDialog.cmj AspectRadio.cmi AspectRadio.cmj Avatar.cmi Avatar.cmj Accordion.cmi Accordion.cmj Alert.cmi Alert.cmj 
+build install.stamp : touch index.cmi index.cmj Badge.cmi Badge.cmj AlertDialog.cmi AlertDialog.cmj Breadcrumb.cmi Breadcrumb.cmj AspectRadio.cmi AspectRadio.cmj Avatar.cmi Avatar.cmj Button.cmi Button.cmj Accordion.cmi Accordion.cmj Alert.cmi Alert.cmj 
