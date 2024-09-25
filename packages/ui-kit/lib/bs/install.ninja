@@ -1,0 +1,18 @@
+rescript = 1
+rule cp
+  command = cp $i $out
+rule touch
+ command = touch $out
+o index.cmi : cp ../bs/src/components/pages/index.cmi
+o index.cmj : cp ../bs/src/components/pages/index.cmj
+o index.cmt : cp ../bs/src/components/pages/index.cmt
+o index.res : cp ../../src/components/pages/index.res
+o AlertDialog.cmi : cp ../bs/src/components/ui-tmp/AlertDialog/AlertDialog.cmi
+o AlertDialog.cmj : cp ../bs/src/components/ui-tmp/AlertDialog/AlertDialog.cmj
+o AlertDialog.cmt : cp ../bs/src/components/ui-tmp/AlertDialog/AlertDialog.cmt
+o AlertDialog.res : cp ../../src/components/ui-tmp/AlertDialog/AlertDialog.res
+o Accordion.cmi : cp ../bs/src/components/ui-tmp/Accordion/Accordion.cmi
+o Accordion.cmj : cp ../bs/src/components/ui-tmp/Accordion/Accordion.cmj
+o Accordion.cmt : cp ../bs/src/components/ui-tmp/Accordion/Accordion.cmt
+o Accordion.res : cp ../../src/components/ui-tmp/Accordion/Accordion.res
+build install.stamp : touch index.cmi index.cmj AlertDialog.cmi AlertDialog.cmj Accordion.cmi Accordion.cmj 
