@@ -7,6 +7,10 @@ o index.cmi : cp ../bs/src/components/pages/index.cmi
 o index.cmj : cp ../bs/src/components/pages/index.cmj
 o index.cmt : cp ../bs/src/components/pages/index.cmt
 o index.res : cp ../../src/components/pages/index.res
+o Badge.cmi : cp ../bs/src/components/ui-tmp/Badge/Badge.cmi
+o Badge.cmj : cp ../bs/src/components/ui-tmp/Badge/Badge.cmj
+o Badge.cmt : cp ../bs/src/components/ui-tmp/Badge/Badge.cmt
+o Badge.res : cp ../../src/components/ui-tmp/Badge/Badge.res
 o AlertDialog.cmi : cp ../bs/src/components/ui-tmp/AlertDialog/AlertDialog.cmi
 o AlertDialog.cmj : cp ../bs/src/components/ui-tmp/AlertDialog/AlertDialog.cmj
 o AlertDialog.cmt : cp ../bs/src/components/ui-tmp/AlertDialog/AlertDialog.cmt
@@ -27,4 +31,4 @@ o Alert.cmi : cp ../bs/src/components/ui-tmp/Alert/Alert.cmi
 o Alert.cmj : cp ../bs/src/components/ui-tmp/Alert/Alert.cmj
 o Alert.cmt : cp ../bs/src/components/ui-tmp/Alert/Alert.cmt
 o Alert.res : cp ../../src/components/ui-tmp/Alert/Alert.res
-build install.stamp : touch index.cmi index.cmj AlertDialog.cmi AlertDialog.cmj AspectRadio.cmi AspectRadio.cmj Avatar.cmi Avatar.cmj Accordion.cmi Accordion.cmj Alert.cmi Alert.cmj 
+build install.stamp : touch index.cmi index.cmj Badge.cmi Badge.cmj AlertDialog.cmi AlertDialog.cmj AspectRadio.cmi AspectRadio.cmj Avatar.cmi Avatar.cmj Accordion.cmi Accordion.cmj Alert.cmi Alert.cmj 
