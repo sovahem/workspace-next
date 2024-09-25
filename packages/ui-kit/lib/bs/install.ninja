@@ -11,6 +11,14 @@ o AlertDialog.cmi : cp ../bs/src/components/ui-tmp/AlertDialog/AlertDialog.cmi
 o AlertDialog.cmj : cp ../bs/src/components/ui-tmp/AlertDialog/AlertDialog.cmj
 o AlertDialog.cmt : cp ../bs/src/components/ui-tmp/AlertDialog/AlertDialog.cmt
 o AlertDialog.res : cp ../../src/components/ui-tmp/AlertDialog/AlertDialog.res
+o AspectRadio.cmi : cp ../bs/src/components/ui-tmp/AspectRadio/AspectRadio.cmi
+o AspectRadio.cmj : cp ../bs/src/components/ui-tmp/AspectRadio/AspectRadio.cmj
+o AspectRadio.cmt : cp ../bs/src/components/ui-tmp/AspectRadio/AspectRadio.cmt
+o AspectRadio.res : cp ../../src/components/ui-tmp/AspectRadio/AspectRadio.res
+o Avatar.cmi : cp ../bs/src/components/ui-tmp/Avatar/Avatar.cmi
+o Avatar.cmj : cp ../bs/src/components/ui-tmp/Avatar/Avatar.cmj
+o Avatar.cmt : cp ../bs/src/components/ui-tmp/Avatar/Avatar.cmt
+o Avatar.res : cp ../../src/components/ui-tmp/Avatar/Avatar.res
 o Accordion.cmi : cp ../bs/src/components/ui-tmp/Accordion/Accordion.cmi
 o Accordion.cmj : cp ../bs/src/components/ui-tmp/Accordion/Accordion.cmj
 o Accordion.cmt : cp ../bs/src/components/ui-tmp/Accordion/Accordion.cmt
@@ -19,4 +27,4 @@ o Alert.cmi : cp ../bs/src/components/ui-tmp/Alert/Alert.cmi
 o Alert.cmj : cp ../bs/src/components/ui-tmp/Alert/Alert.cmj
 o Alert.cmt : cp ../bs/src/components/ui-tmp/Alert/Alert.cmt
 o Alert.res : cp ../../src/components/ui-tmp/Alert/Alert.res
-build install.stamp : touch index.cmi index.cmj AlertDialog.cmi AlertDialog.cmj Accordion.cmi Accordion.cmj Alert.cmi Alert.cmj 
+build install.stamp : touch index.cmi index.cmj AlertDialog.cmi AlertDialog.cmj AspectRadio.cmi AspectRadio.cmj Avatar.cmi Avatar.cmj Accordion.cmi Accordion.cmj Alert.cmi Alert.cmj 

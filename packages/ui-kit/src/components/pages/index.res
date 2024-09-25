@@ -24,5 +24,6 @@
          description="Description de l'alerte"
          variant="default"
        />
+       <Avatar.Make src="https://github.com/shadcn.png" alt="@shadcn" fallback="CN" />
      </div>
    }
