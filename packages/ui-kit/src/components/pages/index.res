@@ -26,5 +26,6 @@
        />
        <Avatar.Make src="https://github.com/shadcn.png" alt="@shadcn" fallback="CN" />
        <Badge.Make>{React.string("Badge")}</Badge.Make>
+       <Calendar.Make />
      </div>
    }

@@ -3,6 +3,7 @@
 import * as Alert from "../ui-tmp/Alert/Alert.bs.js";
 import * as Badge from "../ui-tmp/Badge/Badge.bs.js";
 import * as Avatar from "../ui-tmp/Avatar/Avatar.bs.js";
+import * as Calendar from "../ui-tmp/Calendar/Calendar.bs.js";
 import * as Accordion from "../ui-tmp/Accordion/Accordion.bs.js";
 import * as AlertDialog from "../ui-tmp/AlertDialog/AlertDialog.bs.js";
 import * as JsxRuntime from "react/jsx-runtime";
@@ -42,7 +43,8 @@ function Index(props) {
                     }),
                 JsxRuntime.jsx(Badge.Make.make, {
                       children: "Badge"
-                    })
+                    }),
+                JsxRuntime.jsx(Calendar.Make.make, {})
               ]
             });
 }
