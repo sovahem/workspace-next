@@ -1,7 +1,6 @@
 @module("react-day-picker") external dayPicker: 'a => React.element = "DayPicker"
 @module("@/components/ui/button") external buttonVariants: 'a => string = "buttonVariants"
-@module("@/lib/utils")
-external cn: array<string> => string = "cn"
+@module("@/lib/utils") external cn: array<string> => string = "cn"
 
 module Make = {
     @react.component

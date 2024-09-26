@@ -39,8 +39,12 @@ o Alert.cmi : cp ../bs/src/components/ui-tmp/Alert/Alert.cmi
 o Alert.cmj : cp ../bs/src/components/ui-tmp/Alert/Alert.cmj
 o Alert.cmt : cp ../bs/src/components/ui-tmp/Alert/Alert.cmt
 o Alert.res : cp ../../src/components/ui-tmp/Alert/Alert.res
+o Card.cmi : cp ../bs/src/components/ui-tmp/Card/Card.cmi
+o Card.cmj : cp ../bs/src/components/ui-tmp/Card/Card.cmj
+o Card.cmt : cp ../bs/src/components/ui-tmp/Card/Card.cmt
+o Card.res : cp ../../src/components/ui-tmp/Card/Card.res
 o Calendar.cmi : cp ../bs/src/components/ui-tmp/Calendar/Calendar.cmi
 o Calendar.cmj : cp ../bs/src/components/ui-tmp/Calendar/Calendar.cmj
 o Calendar.cmt : cp ../bs/src/components/ui-tmp/Calendar/Calendar.cmt
 o Calendar.res : cp ../../src/components/ui-tmp/Calendar/Calendar.res
-build install.stamp : touch index.cmi index.cmj Badge.cmi Badge.cmj AlertDialog.cmi AlertDialog.cmj Breadcrumb.cmi Breadcrumb.cmj AspectRadio.cmi AspectRadio.cmj Avatar.cmi Avatar.cmj Button.cmi Button.cmj Accordion.cmi Accordion.cmj Alert.cmi Alert.cmj Calendar.cmi Calendar.cmj 
+build install.stamp : touch index.cmi index.cmj Badge.cmi Badge.cmj AlertDialog.cmi AlertDialog.cmj Breadcrumb.cmi Breadcrumb.cmj AspectRadio.cmi AspectRadio.cmj Avatar.cmi Avatar.cmj Button.cmi Button.cmj Accordion.cmi Accordion.cmj Alert.cmi Alert.cmj Card.cmi Card.cmj Calendar.cmi Calendar.cmj 
