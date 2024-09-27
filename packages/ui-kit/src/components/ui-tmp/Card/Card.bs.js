@@ -2,6 +2,11 @@
 
 import * as Caml_option from "rescript/lib/es6/caml_option.js";
 import * as JsxRuntime from "react/jsx-runtime";
+import * as Utils from "../../../lib/utils";
+
+function cn(prim) {
+  return Utils.cn(prim);
+}
 
 function Card$Card(props) {
   return JsxRuntime.jsx("div", {
@@ -100,6 +105,7 @@ var Make = {
 };
 
 export {
+  cn ,
   Card ,
   CardHeader ,
   CardTitle ,

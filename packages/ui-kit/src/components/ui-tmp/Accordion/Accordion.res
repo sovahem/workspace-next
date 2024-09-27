@@ -1,6 +1,6 @@
 
 
-@module("@/lib/utils")
+@module("../../../lib/utils")
 external cn: array<string> => string = "cn"
 
 type accordionItem = {

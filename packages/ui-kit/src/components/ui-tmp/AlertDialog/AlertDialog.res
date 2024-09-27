@@ -1,4 +1,4 @@
-@module("@/lib/utils")
+@module("../../../lib/utils")
 external cn: array<string> => string = "cn"
 
 module AlertDialog = {

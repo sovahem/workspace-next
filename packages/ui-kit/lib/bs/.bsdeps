@@ -10,13 +10,14 @@ src/stories	0x1.9bcea1b4p+30
 src/stories/assets	0x1.9bcea1bp+30
 src/components	0x1.9bcf07acp+30
 src/components/pages	0x1.9bcf07acp+30
-src/components/ui-tmp	0x1.9bd5c94p+30
+src/components/ui-tmp	0x1.9bd5d974p+30
 src/components/ui-tmp/Badge	0x1.9bcf641cp+30
 src/components/ui-tmp/AlertDialog	0x1.9bcf13cp+30
 src/components/ui-tmp/Breadcrumb	0x1.9bcfa32cp+30
 src/components/ui-tmp/AspectRadio	0x1.9bcf5b7cp+30
 src/components/ui-tmp/Avatar	0x1.9bcf5becp+30
 src/components/ui-tmp/Button	0x1.9bcfa8ep+30
+src/components/ui-tmp/Carousel	0x1.9bd9549cp+30
 src/components/ui-tmp/Accordion	0x1.9bcee00cp+30
 src/components/ui-tmp/Alert	0x1.9bcf4fp+30
 src/components/ui-tmp/Card	0x1.9bd5c9ap+30
@@ -25,4 +26,4 @@ src/components/ui	0x1.9bcea034p+30
 src/app	0x1.9bcb8488p+30
 src/app/fonts	0x1.9bcb8488p+30
 ===
-/Users/sovannarahem/Desktop/Projects/workspace-next/node_modules/.pnpm/rescript@11.1.4/node_modules/rescript/darwinarm64/rescript.exe	0x1.9bd5d70cp+30
+/Users/sovannarahem/Desktop/Projects/workspace-next/node_modules/.pnpm/rescript@11.1.4/node_modules/rescript/darwinarm64/rescript.exe	0x1.9bd9566cp+30

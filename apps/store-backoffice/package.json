@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "store-backoffice",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
+    "@repo/ui": "workspace:*",
     "@repo/ui-kit": "workspace:*",
     "next": "14.2.8",
     "react": "^18",

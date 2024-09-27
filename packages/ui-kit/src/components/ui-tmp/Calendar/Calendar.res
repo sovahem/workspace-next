@@ -1,6 +1,6 @@
 @module("react-day-picker") external dayPicker: 'a => React.element = "DayPicker"
-@module("@/components/ui/button") external buttonVariants: 'a => string = "buttonVariants"
-@module("@/lib/utils") external cn: array<string> => string = "cn"
+// @module("../Button/Button.res") external buttonVariants: 'a => string = "buttonVariants"
+@module("../../../lib/utils") external cn: array<string> => string = "cn"
 
 module Make = {
     @react.component
@@ -11,12 +11,12 @@ module Make = {
       | _ => "default"
     }
     let navButtonClassName = cn([
-      buttonVariants({"variant": "outline"}),
+      // buttonVariants({"variant": "outline"}),
       "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100"
     ])
 
     let dayClassName = cn([
-      buttonVariants({"variant": "ghost"}),
+      // buttonVariants({"variant": "ghost"}),
       "h-8 w-8 p-0 font-normal aria-selected:opacity-100"
     ])
 

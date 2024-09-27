@@ -92,6 +92,9 @@
     "./tailwind.config": "./tailwind.config.ts",
     "./lib/*": "./src/lib/*.ts",
     "./hooks/*": "./src/hooks/*.ts",
-    "./components/*": "./src/components/*.tsx"
+    "./components/*": [
+      "./src/components/*.tsx",
+      "./src/components/*.js"
+    ]
   }
 }

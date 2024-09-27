@@ -1,4 +1,4 @@
-11
+12
 Card
 Alert
 Badge
@@ -6,10 +6,11 @@ Index
 Avatar
 Button
 Calendar
+Carousel
 Accordion
 Breadcrumb
 AlertDialog
 AspectRadio
-src/components/ui-tmp/Card	src/components/ui-tmp/Alert	src/components/ui-tmp/Badge	src/components/pages	src/components/ui-tmp/Avatar	src/components/ui-tmp/Button	src/components/ui-tmp/Calendar	src/components/ui-tmp/Accordion	src/components/ui-tmp/Breadcrumb	src/components/ui-tmp/AlertDialog	src/components/ui-tmp/AspectRadio	
-1	
+src/components/ui-tmp/Card	src/components/ui-tmp/Alert	src/components/ui-tmp/Badge	src/components/pages	src/components/ui-tmp/Avatar	src/components/ui-tmp/Button	src/components/ui-tmp/Calendar	src/components/ui-tmp/Carousel	src/components/ui-tmp/Accordion	src/components/ui-tmp/Breadcrumb	src/components/ui-tmp/AlertDialog	src/components/ui-tmp/AspectRadio	
+1	
 0
