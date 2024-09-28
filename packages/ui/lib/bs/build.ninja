@@ -5,11 +5,11 @@ rule astj
   command = /Users/sovannarahem/Desktop/Projects/workspace-next/node_modules/.pnpm/rescript@11.1.4/node_modules/rescript/darwinarm64/bsc.exe  -bs-v 11.1.4 -bs-jsx 4 -bs-jsx-mode automatic -uncurried -open RescriptCore -absname -bs-ast -o $out $i
 o src/components/pages/index.ast : astj ../../src/components/pages/index.res
 rule deps
-  command = /Users/sovannarahem/Desktop/Projects/workspace-next/node_modules/.pnpm/rescript@11.1.4/node_modules/rescript/darwinarm64/bsb_helper.exe -hash cab3050118f584c0d73d87b2712cca71 $in
+  command = /Users/sovannarahem/Desktop/Projects/workspace-next/node_modules/.pnpm/rescript@11.1.4/node_modules/rescript/darwinarm64/bsb_helper.exe -hash af12849332abae36023653b3c4824eaf $in
   restat = 1
 o src/components/pages/index.d : deps src/components/pages/index.ast
 rule mij
-  command = /Users/sovannarahem/Desktop/Projects/workspace-next/node_modules/.pnpm/rescript@11.1.4/node_modules/rescript/darwinarm64/bsc.exe -I src/app/fonts -I src/app -I src/components/ui -I src/components/ui-tmp/Calendar -I src/components/ui-tmp/Card -I src/components/ui-tmp/Alert -I src/components/ui-tmp/Accordion -I src/components/ui-tmp/Carousel -I src/components/ui-tmp/Button -I src/components/ui-tmp/Avatar -I src/components/ui-tmp/AspectRadio -I src/components/ui-tmp/Breadcrumb -I src/components/ui-tmp/AlertDialog -I src/components/ui-tmp/Badge -I src/components/ui-tmp -I src/components/pages -I src/components -I src/stories/assets -I src/stories -I src/hooks -I src/lib -I src -I /Users/sovannarahem/Desktop/Projects/workspace-next/packages/ui/node_modules/@rescript/core/lib/ocaml -I /Users/sovannarahem/Desktop/Projects/workspace-next/packages/ui/node_modules/@rescript/react/lib/ocaml -open RescriptCore  -uncurried -bs-package-name my-rescript-project -bs-package-output esmodule:$in_d:.bs.js -bs-v $g_finger $i
+  command = /Users/sovannarahem/Desktop/Projects/workspace-next/node_modules/.pnpm/rescript@11.1.4/node_modules/rescript/darwinarm64/bsc.exe -I src/app/fonts -I src/app -I src/components/ui -I src/components/ui-tmp/Form -I src/components/ui-tmp/Calendar -I src/components/ui-tmp/Card -I src/components/ui-tmp/Alert -I src/components/ui-tmp/Accordion -I src/components/ui-tmp/Label -I src/components/ui-tmp/Carousel -I src/components/ui-tmp/Button -I src/components/ui-tmp/Avatar -I src/components/ui-tmp/AspectRadio -I src/components/ui-tmp/Breadcrumb -I src/components/ui-tmp/AlertDialog -I src/components/ui-tmp/Badge -I src/components/ui-tmp -I src/components/pages -I src/components -I src/stories/assets -I src/stories -I src/hooks -I src/lib -I src -I /Users/sovannarahem/Desktop/Projects/workspace-next/packages/ui/node_modules/@rescript/core/lib/ocaml -I /Users/sovannarahem/Desktop/Projects/workspace-next/packages/ui/node_modules/@rescript/react/lib/ocaml -open RescriptCore  -uncurried -bs-package-name my-rescript-project -bs-package-output esmodule:$in_d:.bs.js -bs-v $g_finger $i
   dyndep = 1
   restat = 1
 o src/components/pages/index.cmj src/components/pages/index.cmi ../../src/components/pages/index.bs.js : mij src/components/pages/index.ast
@@ -34,6 +34,9 @@ o src/components/ui-tmp/Button/Button.cmj src/components/ui-tmp/Button/Button.cm
 o src/components/ui-tmp/Carousel/Carousel.ast : astj ../../src/components/ui-tmp/Carousel/Carousel.res
 o src/components/ui-tmp/Carousel/Carousel.d : deps src/components/ui-tmp/Carousel/Carousel.ast
 o src/components/ui-tmp/Carousel/Carousel.cmj src/components/ui-tmp/Carousel/Carousel.cmi ../../src/components/ui-tmp/Carousel/Carousel.bs.js : mij src/components/ui-tmp/Carousel/Carousel.ast
+o src/components/ui-tmp/Label/Label.ast : astj ../../src/components/ui-tmp/Label/Label.res
+o src/components/ui-tmp/Label/Label.d : deps src/components/ui-tmp/Label/Label.ast
+o src/components/ui-tmp/Label/Label.cmj src/components/ui-tmp/Label/Label.cmi ../../src/components/ui-tmp/Label/Label.bs.js : mij src/components/ui-tmp/Label/Label.ast
 o src/components/ui-tmp/Accordion/Accordion.ast : astj ../../src/components/ui-tmp/Accordion/Accordion.res
 o src/components/ui-tmp/Accordion/Accordion.d : deps src/components/ui-tmp/Accordion/Accordion.ast
 o src/components/ui-tmp/Accordion/Accordion.cmj src/components/ui-tmp/Accordion/Accordion.cmi ../../src/components/ui-tmp/Accordion/Accordion.bs.js : mij src/components/ui-tmp/Accordion/Accordion.ast
@@ -46,3 +49,6 @@ o src/components/ui-tmp/Card/Card.cmj src/components/ui-tmp/Card/Card.cmi ../../
 o src/components/ui-tmp/Calendar/Calendar.ast : astj ../../src/components/ui-tmp/Calendar/Calendar.res
 o src/components/ui-tmp/Calendar/Calendar.d : deps src/components/ui-tmp/Calendar/Calendar.ast
 o src/components/ui-tmp/Calendar/Calendar.cmj src/components/ui-tmp/Calendar/Calendar.cmi ../../src/components/ui-tmp/Calendar/Calendar.bs.js : mij src/components/ui-tmp/Calendar/Calendar.ast
+o src/components/ui-tmp/Form/Form.ast : astj ../../src/components/ui-tmp/Form/Form.res
+o src/components/ui-tmp/Form/Form.d : deps src/components/ui-tmp/Form/Form.ast
+o src/components/ui-tmp/Form/Form.cmj src/components/ui-tmp/Form/Form.cmi ../../src/components/ui-tmp/Form/Form.bs.js : mij src/components/ui-tmp/Form/Form.ast

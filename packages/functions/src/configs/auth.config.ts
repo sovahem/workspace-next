@@ -20,6 +20,7 @@ export const authConfig: NextAuthConfig = {
       return modifiedSession;
     },
     authorized({ auth, request: { nextUrl } }) {
+      console.log(auth);
       const isLoggedIn = !!auth?.user;
       if (!isLoggedIn) return false;
       if (!nextUrl.pathname.startsWith(`/${siteName}`))

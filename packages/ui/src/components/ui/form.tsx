@@ -1,21 +1,26 @@
 "use client";
 
-import * as React from "react";
+import { zodResolver } from "@hookform/resolvers/zod";
 import * as LabelPrimitive from "@radix-ui/react-label";
 import { Slot } from "@radix-ui/react-slot";
+import * as React from "react";
+import { RefObject, useEffect, useRef } from "react";
 import {
   Controller,
   ControllerProps,
+  FieldErrors,
   FieldPath,
   FieldValues,
   FormProvider,
+  useForm,
   useFormContext,
 } from "react-hook-form";
-
-import { cn } from "@/lib/utils";
-import { Label } from "@/components/ui/label";
-
-const Form = FormProvider;
+import { z } from "zod";
+import { usePreventNavigation } from "../../hooks/use-prevent-navigation";
+import { cn } from "../../lib/utils";
+import { Alert } from "./alert";
+import { Button } from "./button";
+import { Label } from "./label";
 
 type FormFieldContextValue<
   TFieldValues extends FieldValues = FieldValues,
@@ -167,13 +172,104 @@ const FormMessage = React.forwardRef<
 });
 FormMessage.displayName = "FormMessage";
 
+type FormUnsavedProps = {
+  isDirty: boolean;
+  errors: FieldErrors<{ [x: string]: any }>;
+  formRef: RefObject<HTMLFormElement>;
+};
+
+const FormUnsaved = ({ isDirty, errors, formRef }: FormUnsavedProps) => {
+  usePreventNavigation(isDirty);
+
+  useEffect(() => {
+    const down = (e: KeyboardEvent) => {
+      if (e.key === "s" && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault();
+        formRef.current?.requestSubmit();
+      }
+    };
+
+    document.addEventListener("keydown", down);
+    return () => document.removeEventListener("keydown", down);
+  }, []);
+
+  return isDirty && Object.keys(errors).length === 0 ? (
+    <Alert
+      className="flex items-center gap-2 fixed bottom-5 left-5 w-fit"
+      title={"Vous avez des modifications!"}
+      action={
+        <Button type="submit" className="gap-3">
+          Sauvergarder
+          <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
+            <span className="text-xs">⌘</span>S
+          </kbd>
+        </Button>
+      }
+    />
+  ) : null;
+};
+
+type FormProps = {
+  children: React.ReactNode;
+  zodSchema: z.ZodObject<any>;
+  initialData: object;
+  className?: string;
+  withUnsaved?: boolean;
+  handleSubmit: (values: any) => void;
+};
+
+const Form = (props: FormProps) => {
+  const {
+    zodSchema,
+    children,
+    initialData,
+    handleSubmit,
+    className = "",
+    withUnsaved,
+  } = props;
+
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const form = useForm<z.infer<typeof zodSchema>>({
+    resolver: zodResolver(zodSchema),
+    defaultValues: initialData,
+  });
+
+  const { isDirty, errors } = form.formState;
+
+  const onSubmit = async (values: z.infer<typeof zodSchema>) => {
+    console.log(values);
+    try {
+      if (isDirty) await handleSubmit(values);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  return (
+    <FormProvider {...form}>
+      <form
+        ref={formRef}
+        onSubmit={form.handleSubmit(onSubmit)}
+        className={className}
+      >
+        {children}
+        {withUnsaved ? (
+          <FormUnsaved isDirty={isDirty} formRef={formRef} errors={errors} />
+        ) : null}
+      </form>
+    </FormProvider>
+  );
+};
+
 export {
-  useFormField,
   Form,
-  FormItem,
-  FormLabel,
   FormControl,
   FormDescription,
-  FormMessage,
   FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+  FormProvider,
+  useFormField,
 };

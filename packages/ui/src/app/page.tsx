@@ -1,7 +1,7 @@
 "use client";
 
-import { make as HomePage } from "../components/pages/index.bs";
+import { LoginForm } from "@/components/organisms/login-form";
 
 export default function Home() {
-  return <HomePage />;
+  return <LoginForm />;
 }

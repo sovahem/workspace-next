@@ -1,7 +1,7 @@
-import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
+import * as React from "react";
 
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 
 const alertVariants = cva(
   "relative w-full rounded-lg border px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground [&>svg~*]:pl-7",
@@ -19,7 +19,7 @@ const alertVariants = cva(
   },
 );
 
-const Alert = React.forwardRef<
+const AlertRoot = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement> & VariantProps<typeof alertVariants>
 >(({ className, variant, ...props }, ref) => (
@@ -30,7 +30,7 @@ const Alert = React.forwardRef<
     {...props}
   />
 ));
-Alert.displayName = "Alert";
+AlertRoot.displayName = "AlertRoot";
 
 const AlertTitle = React.forwardRef<
   HTMLParagraphElement,
@@ -56,4 +56,28 @@ const AlertDescription = React.forwardRef<
 ));
 AlertDescription.displayName = "AlertDescription";
 
-export { Alert, AlertTitle, AlertDescription };
+export type AlertProps = {
+  icon?: React.ReactNode;
+  title?: React.ReactNode;
+  description?: React.ReactNode;
+  action?: React.ReactNode;
+  className?: string;
+};
+
+export const Alert = ({
+  icon,
+  title,
+  description,
+  action,
+  className = "",
+}: AlertProps) => {
+  return (
+    <AlertRoot className={className}>
+      {icon ? icon : null}
+      {title ? <AlertTitle>{title}</AlertTitle> : null}
+      {description ? <AlertDescription>{description}</AlertDescription> : null}
+      {action ? action : null}
+    </AlertRoot>
+  );
+};
+export { AlertDescription, AlertRoot, AlertTitle };

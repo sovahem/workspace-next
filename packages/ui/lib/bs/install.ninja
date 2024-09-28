@@ -35,6 +35,10 @@ o Carousel.cmi : cp ../bs/src/components/ui-tmp/Carousel/Carousel.cmi
 o Carousel.cmj : cp ../bs/src/components/ui-tmp/Carousel/Carousel.cmj
 o Carousel.cmt : cp ../bs/src/components/ui-tmp/Carousel/Carousel.cmt
 o Carousel.res : cp ../../src/components/ui-tmp/Carousel/Carousel.res
+o Label.cmi : cp ../bs/src/components/ui-tmp/Label/Label.cmi
+o Label.cmj : cp ../bs/src/components/ui-tmp/Label/Label.cmj
+o Label.cmt : cp ../bs/src/components/ui-tmp/Label/Label.cmt
+o Label.res : cp ../../src/components/ui-tmp/Label/Label.res
 o Accordion.cmi : cp ../bs/src/components/ui-tmp/Accordion/Accordion.cmi
 o Accordion.cmj : cp ../bs/src/components/ui-tmp/Accordion/Accordion.cmj
 o Accordion.cmt : cp ../bs/src/components/ui-tmp/Accordion/Accordion.cmt
@@ -51,4 +55,8 @@ o Calendar.cmi : cp ../bs/src/components/ui-tmp/Calendar/Calendar.cmi
 o Calendar.cmj : cp ../bs/src/components/ui-tmp/Calendar/Calendar.cmj
 o Calendar.cmt : cp ../bs/src/components/ui-tmp/Calendar/Calendar.cmt
 o Calendar.res : cp ../../src/components/ui-tmp/Calendar/Calendar.res
-build install.stamp : touch index.cmi index.cmj Badge.cmi Badge.cmj AlertDialog.cmi AlertDialog.cmj Breadcrumb.cmi Breadcrumb.cmj AspectRadio.cmi AspectRadio.cmj Avatar.cmi Avatar.cmj Button.cmi Button.cmj Carousel.cmi Carousel.cmj Accordion.cmi Accordion.cmj Alert.cmi Alert.cmj Card.cmi Card.cmj Calendar.cmi Calendar.cmj 
+o Form.cmi : cp ../bs/src/components/ui-tmp/Form/Form.cmi
+o Form.cmj : cp ../bs/src/components/ui-tmp/Form/Form.cmj
+o Form.cmt : cp ../bs/src/components/ui-tmp/Form/Form.cmt
+o Form.res : cp ../../src/components/ui-tmp/Form/Form.res
+build install.stamp : touch index.cmi index.cmj Badge.cmi Badge.cmj AlertDialog.cmi AlertDialog.cmj Breadcrumb.cmi Breadcrumb.cmj AspectRadio.cmi AspectRadio.cmj Avatar.cmi Avatar.cmj Button.cmi Button.cmj Carousel.cmi Carousel.cmj Label.cmi Label.cmj Accordion.cmi Accordion.cmj Alert.cmi Alert.cmj Card.cmi Card.cmj Calendar.cmi Calendar.cmj Form.cmi Form.cmj 
